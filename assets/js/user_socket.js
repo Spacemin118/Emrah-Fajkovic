@@ -177,7 +177,7 @@ function formatTime(datetime) {
 // Sanitize string input borrowed from:
 // stackoverflow.com/questions/23187013/sanitize-javascript-string
 function sanitizeString(str){
-  str = str.replace(/[^a-z0-9áéíóúñü \.,!_-]/gim,"");
+  str = str.replace(/[^a-z0-9áéíóúñü \.?$@*~/=,!_-]/gim,"");
   return str.trim();
 }
 export default socket
